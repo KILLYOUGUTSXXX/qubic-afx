@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true
-  }
+  },
   // webpack: (config: any) => {
   //   config.snapshot = {
   //     ...(config.snapshot ?? {}),
@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
   //   }
   //   return config
   // },
+  distDir: 'build'
 }
 
 export default nextConfig
