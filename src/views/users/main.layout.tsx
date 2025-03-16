@@ -1,14 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useLynxStore } from '@afx/models/engine/main.provider'
 import { IActionUser, IStateUser } from '@afx/models/user.model'
-import React from 'react'
+import React, { useState } from 'react'
 import BrowseUserLayout from './browse.layout'
 import { IDataUsers } from '@afx/interfaces/main/user.iface'
 import ModalView from '@afx/components/Modals/main.layout'
 import UserDetailLayout from './layouts/user-detail.layout'
 import { IActionPost, IStatePost } from '@afx/models/post.model'
 import PostDetailLayout from './layouts/post-detail.layout'
+import FilterUserLayout from './filter.layout'
 
 export default function UserLayout(): React.JSX.Element {
+  const [filterData, setFilterData] = useState<{
+    key: string
+    value: string
+  }>({ key: 'name', value: '' })
   const {
     state,
     isLoading,
@@ -72,12 +78,21 @@ export default function UserLayout(): React.JSX.Element {
       >
         <PostDetailLayout LOADINGS={LOADING_POSTS} data={statePost.listPost} />
       </ModalView>
-      <BrowseUserLayout
-        onShowPost={onShowPost}
-        onSeekDetail={onSeekDetail}
-        LOADINGS={LOADINGS}
-        dataSources={state.listUser}
-      />
+
+      <div className="flex flex-col gap-3">
+        <FilterUserLayout onChangeFilter={v => setFilterData(v)} />
+        <BrowseUserLayout
+          onShowPost={onShowPost}
+          onSeekDetail={onSeekDetail}
+          LOADINGS={LOADINGS}
+          dataSources={state.listUser.filter(
+            (a: any) =>
+              (a[filterData?.key] as string)
+                ?.toLowerCase?.()
+                .indexOf?.(filterData?.value?.toLowerCase?.() as string) !== -1
+          )}
+        />
+      </div>
     </div>
   )
 }

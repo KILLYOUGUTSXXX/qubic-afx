@@ -2,6 +2,15 @@
   "name": "qubic",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "KILLYOUGUTSXXX",
+    "email": "lord.aidilf@gmail.com",
+    "url": "https://aidil.killyourguts-projects.online"
+  },
+  "repository": {
+    "type": "TEMPLATE",
+    "url": "https://github.com/KILLYOUGUTSXXX/next-example-template"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
