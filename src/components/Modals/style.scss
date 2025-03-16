@@ -1,0 +1,36 @@
+:where(.css-dev-only-do-not-override-240cud).ant-modal .ant-modal-content {
+  padding: 0px !important;
+}
+
+.modal-container {
+  border-radius: 8px;
+  flex-direction: column;
+  display: flex;
+  row-gap: 1.5em;
+
+  > .modal-header {
+    border-bottom: 1px solid lightgray;
+    padding: 8px 4px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  > .modal-content {
+    padding: 2px 4px;
+  }
+
+  > .modal-closeable {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: rgb(238, 72, 72) !important;
+  }
+}

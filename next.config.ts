@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  compiler: {
+    removeConsole: false
+  },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
+  // webpack: (config: any) => {
+  //   config.snapshot = {
+  //     ...(config.snapshot ?? {}),
+  //     managedPaths: [/^(.+?[\\/]node_modules[\\/])(?!@next)/]
+  //   }
+  //   return config
+  // },
+  distDir: 'dist'
+}
 
-export default nextConfig;
+export default nextConfig

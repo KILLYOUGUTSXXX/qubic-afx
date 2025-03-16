@@ -1,0 +1,17 @@
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.row-tables {
+  &:hover {
+    background: linear-gradient(90deg, #f0f0f0 25%, #9ebffd 31.5%, #fffafa 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite linear;
+    cursor: pointer;
+  }
+}

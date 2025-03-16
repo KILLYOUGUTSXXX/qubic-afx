@@ -1,0 +1,21 @@
+/* [project]/src/components/Others/spinner/style.scss.css [app-client] (css) */
+.spinner {
+  border: 4px solid #0000001a;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: 1s linear infinite spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=src_components_Others_spinner_style_scss_b52d8e88.css.map*/

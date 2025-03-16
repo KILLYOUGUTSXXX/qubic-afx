@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,9 +23,44 @@
       }
     ],
     "paths": {
-      "afx/*": ["./src/*"]
+      "@afx/models/engine/*": [
+        "./src/models/_engine/*"
+      ],
+      "@afx/models/*": [
+        "./src/models/main/*"
+      ],
+      "@afx/views/*": [
+        "./src/views/*"
+      ],
+      "@afx/utilities/*": [
+        "./src/utilities/*"
+      ],
+      "@afx/services/*": [
+        "./src/services/*"
+      ],
+      "@afx/components/*": [
+        "./src/components/*"
+      ],
+      "@afx/interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "@afx/mock-datas/*": [
+        "./src/mock-datas/*"
+      ],
+      "@afx/asset-icons/*": [
+        "./src/assets/icons/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "src/app/404.js",
+    "dist/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

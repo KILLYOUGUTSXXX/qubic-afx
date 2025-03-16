@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/Modals/style.scss.css"],"sourcesContent":[":where(.css-dev-only-do-not-override-240cud).ant-modal .ant-modal-content{padding:0px !important}.modal-container{border-radius:8px;flex-direction:column;display:flex;row-gap:1.5em}.modal-container>.modal-header{border-bottom:1px solid #d3d3d3;padding:8px 4px;font-weight:500;font-size:18px}.modal-container>.modal-content{padding:2px 4px}.modal-container>.modal-closeable{position:absolute;right:12px;top:6px;display:flex;flex-direction:row;justify-content:center;justify-items:center;border-radius:8px;height:40px;width:40px;cursor:pointer;color:#ee4848 !important}"],"names":[],"mappings":"AAAA;;;;AAAiG;;;;;;;AAAoF;;;;;;;AAA8G;;;;AAAgD"}}]
+}

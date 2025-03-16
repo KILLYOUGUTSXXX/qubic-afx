@@ -1,0 +1,14 @@
+/* [project]/src/views/base/style.scss.css [app-client] (css) */
+.header-db {
+  border: 1px solid;
+  box-shadow: .32px .23px 1.35px .12px #000000bf;
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+}
+
+.content-db {
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/*# sourceMappingURL=src_views_base_style_scss_b52d8e88.css.map*/
