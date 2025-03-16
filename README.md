@@ -19,4 +19,4 @@
 - [Localhost:3000](http://localhost:3000)
 
 ###  Deployment Application
-- [https://qubic-afx-git-main-aidil-febrians-projects.vercel.app](https://qubic-afx-git-main-aidil-febrians-projects.vercel.app/)
+- [https://qubic-afx.vercel.app/](https://qubic-afx.vercel.app/)
