@@ -2,7 +2,7 @@ import CustomFormItem from '@afx/components/Forms/form-item.layout'
 import { CustomForm } from '@afx/components/Forms/form.layout'
 import InputText from '@afx/components/Inputs/input/main.layout'
 import SelectOption from '@afx/components/Inputs/select/main.layout'
-import { Col, Flex, Form, Row } from 'antd'
+import { Col, Form, Row } from 'antd'
 
 export interface IFilterUserLayout {
   onChangeFilter: (payload: { key: string; value: string }) => void
@@ -23,7 +23,7 @@ export default function FilterUserLayout(props: IFilterUserLayout) {
     >
       <Row>
         <Col xxl={6} xl={7} lg={8} md={8} sm={24} xs={24}>
-          <CustomFormItem name="key" className="!my-0 bg-red-200" colon={false}>
+          <CustomFormItem name="key" className="!my-0" colon={false}>
             <SelectOption
               options={[
                 { label: 'Name', value: 'name' },
