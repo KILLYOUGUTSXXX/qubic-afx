@@ -6,6 +6,7 @@ $baseColorOpacity: rgba(110, 163, 243, 0.65);
   transition: 0.35s ease;
   border-right: 0.75px solid;
   width: 225px;
+  overflow: hidden;
 
   &.mv {
     position: absolute;
@@ -17,7 +18,7 @@ $baseColorOpacity: rgba(110, 163, 243, 0.65);
       content: '';
       top: 0px;
       left: 235px;
-      width: 100vw;
+      width: 100dvw;
       height: 100vh;
     }
   }
@@ -67,7 +68,7 @@ $baseColorOpacity: rgba(110, 163, 243, 0.65);
   border: 2px solid;
   // border: 2px solid $baseColor;
   position: absolute;
-  right: -12px;
+  right: 12px;
   padding: 0.275em;
   border-radius: 100%;
   // background-color: white;
@@ -82,6 +83,10 @@ $baseColorOpacity: rgba(110, 163, 243, 0.65);
   > * {
     transition: 0.75s ease;
     transform: rotate(180deg);
+  }
+
+  &.collapsed {
+    display: none;
   }
 
   &.collapsed > * {

@@ -24,7 +24,12 @@ export default function Sidebar(props: ISidebar) {
       <div
         className={`relative flex flex-row items-center px-2 py-4 gap-x-2 header bg-base-color dark:bg-dark-color ${props.collapsed ? 'collapsed' : ''}`}
       >
-        <Icons type="AppstoreOutlined" size={32} />
+        <a
+          onClick={() => props.collapsed && props.setCollapsed(false)}
+          className="cursor-pointer"
+        >
+          <Icons type="AppstoreOutlined" size={32} />
+        </a>
         {!props.collapsed && (
           <Text className="text-[20px] font-semibold">Qubic</Text>
         )}
