@@ -1,5 +1,7 @@
-:where(.css-dev-only-do-not-override-240cud).ant-modal .ant-modal-content {
-  padding: 0px !important;
+.custom-modal {
+  .ant-modal-content {
+    padding: 0px !important;
+  }
 }
 
 .modal-container {

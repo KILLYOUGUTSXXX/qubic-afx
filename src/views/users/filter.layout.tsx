@@ -35,7 +35,7 @@ export default function FilterUserLayout(props: IFilterUserLayout) {
         </Col>
         <Col xxl={8} xl={9} lg={10} md={10} sm={24} xs={24}>
           <CustomFormItem name="value" className="!my-0" colon={false}>
-            <InputText size="large" />
+            <InputText size="large" autoComplete="off" />
           </CustomFormItem>
         </Col>
       </Flex>

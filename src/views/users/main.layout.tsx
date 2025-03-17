@@ -9,6 +9,7 @@ import UserDetailLayout from './layouts/user-detail.layout'
 import { IActionPost, IStatePost } from '@afx/models/post.model'
 import PostDetailLayout from './layouts/post-detail.layout'
 import FilterUserLayout from './filter.layout'
+import { Modal } from 'antd'
 
 export default function UserLayout(): React.JSX.Element {
   const [filterData, setFilterData] = useState<{
@@ -54,6 +55,10 @@ export default function UserLayout(): React.JSX.Element {
   const onSubmitData = (data: IDataUsers, resetFields: () => void) => {
     resetFields()
     onCloseDetail()
+    return Modal.success({
+      title: 'Success',
+      content: 'Data success to edited.'
+    })
   }
   return (
     <div className="flex flex-col gap-3">

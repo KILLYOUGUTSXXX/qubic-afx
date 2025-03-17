@@ -92,7 +92,7 @@ export default function SimpleTable<T, K extends keyof T>(
           <tr>
             {props.columns.map(a => (
               <th key={a.key} scope="col" className="px-6 py-3">
-                <div className="flex flex-row gap-x-2">
+                <div className="flex flex-row gap-x-2 items-center">
                   <Text>{a.title}</Text>
                   {a.showSort && (
                     <a

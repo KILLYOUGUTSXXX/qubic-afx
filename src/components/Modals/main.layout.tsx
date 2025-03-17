@@ -30,6 +30,7 @@ export default function ModalView(props: IModalView) {
 
   return (
     <Modal
+      className="custom-modal"
       style={{ top: 30 }}
       footer={[]}
       open={open}
