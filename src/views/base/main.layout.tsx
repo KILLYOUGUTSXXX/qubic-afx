@@ -5,6 +5,7 @@ import Sidebar from '@afx/components/Layouts/sidebar.layout'
 import Header from '@afx/components/Layouts/header.layout'
 import { Grid } from 'antd'
 import { signOut } from 'next-auth/react'
+import '@ant-design/v5-patch-for-react-19'
 
 export default function BaseLayout(
   props: PropsWithChildren

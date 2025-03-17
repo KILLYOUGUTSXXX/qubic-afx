@@ -6,7 +6,7 @@
   --color-dark-color : rgb(51,50,51);
 }
 
-* {
+.mode-transition {
   transition: .275s ease;
 }
 :root {
